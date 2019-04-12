@@ -478,7 +478,7 @@ var App = (function(window){
           }
       });
       $("#r-to-top").on('click', function(){
-          $('html, body').animate({scrollTop: '0px'}, 800);
+          $('html, body').animate({scrollTop: $("#r-about-info").offset().top}, 800);
           return false;
       });
     },
@@ -549,5 +549,31 @@ $(window).on('scroll', function(){
   }
 });
 
+// This is a functions that scrolls to #{blah}link
+function goToByScroll(id) {
+    // Remove "link" from the ID
+    id = id.replace("link", "");
+    alert(id);
+    // Scroll
+    $('html,body').animate({
+        scrollTop: $("#" + id).offset().top
+    }, 'slow');
+    return false;
+}
 
+$("#menus > ul > li > a").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    alert("DOR!");
+    e.preventDefault();
+
+    // Scroll
+    $('html,body').animate({
+        scrollTop: $("#r-about-info").offset().top
+    }, 2000);
+    return false;
+
+    // Call the scroll function
+    //goToByScroll(this.id);
+
+});
 

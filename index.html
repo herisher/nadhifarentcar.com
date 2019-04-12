@@ -23,7 +23,12 @@
       <!-- CSS:: MAIN -->
       <link rel="stylesheet" type="text/css" href="assets/css/main.css">
       <link rel="stylesheet" type="text/css" id="r-color-roller" href="assets/color-files/color-06.css">
-
+      <style>
+        .r-offer-img{
+          min-height: 200px;
+          max-height: 200px;
+        }
+      </style>
   </head>
   <body>
       <div class="r-wrapper">
@@ -40,12 +45,12 @@
                   </div>
                   <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12">
                     <div class="r-nav-section float-right">
-                      <nav>
+                      <nav id="menus">
                         <ul>
-                          <li><a href="#">HOME</a></li>
-                          <li><a href="#about">ABOUT US</a></li>
-                          <li><a href="#rent">RENT A CAR</a></li>
-                          <li><a href="#contact">CONTACT US</a></li>
+                          <li><a id="home" href="#">HOME</a></li>
+                          <li><a id="r-about-info" href="#">ABOUT US</a></li>
+                          <li><a id="r-vehicles" href="#">RENT A CAR</a></li>
+                          <li><a id="r-contact" href="#">CONTACT US</a></li>
                         </ul>
                       </nav>
                     </div>
@@ -55,34 +60,48 @@
             </div>
             <div class="r-slider owl-carousel" id="defaultHomeSlider">
               <div class="r-slider-item">
-                <img src="assets/images/main-slider-01.jpg" class="img-fluid d-block m-auto" alt="">
+                <img src="assets/images/slider01.jpg" class="img-fluid d-block m-auto" alt="">
                 <div class="container">
                   <div class="r-slider-top-content">
-                    <h1 class="animated fadeInDown">Kia Rio <span>z</span></h1>
-                    <h4 class="animated fadeInLeft">FOR RENT <strong>$50</strong> PER DAY</h4>
+                    <h1 class="animated fadeInDown">Suzuki <span>Ertiga</span></h1>
+                    <h4 class="animated fadeInLeft">FOR RENT <strong>Rp400k</strong></h4>
                     <a href="#" class="btn btn-outlined animated fadeInUp"> Reserve Now </a>
                   </div>
                 </div> 
               </div>
               <div class="r-slider-item">
-                <img src="assets/images/main-slider-04.jpg" class="img-fluid d-block m-auto" alt="">
+                <img src="assets/images/slider02.jpg" class="img-fluid d-block m-auto" alt="">
                 <div class="container">
                   <div class="r-slider-top-content">
-                    <h1>BMW <span>3</span></h1>
-                    <h4>FOR RENT <strong>$150</strong> PER DAY</h4>
+                    <h1>Toyota <span>Alphard</span></h1>
+                    <h4>FOR RENT <strong>Rp2.750k</strong></h4>
                     <a href="#" class="btn btn-outlined"> Reserve Now </a>
                   </div>
                 </div>
               </div>
               <div class="r-slider-item">
-                <img src="assets/images/main-slider-05.jpg" class="img-fluid d-block m-auto" alt="">
+                <img src="assets/images/slider03.jpg" class="img-fluid d-block m-auto" alt="">
                 <div class="container">
                   <div class="r-slider-top-content">
-                    <h1>Audi <span>A4</span></h1>
-                    <h4>FOR RENT <strong>$100</strong> PER DAY</h4>
+                    <h1>Mitsubishi <span>Pajero Sport</span></h1>
+                    <h4>FOR RENT <strong>by Request</strong></h4>
                     <a href="#" class="btn btn-outlined"> Reserve Now </a>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="r-car-search">
+              <div class="container">
+                <div class="r-top-form-title animated fadeInUp">
+                  <h3>Search Your <b>Best Cars.</b></h3>
+                </div>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                      <div class="form-group">
+                        <input type="submit" class="form-control btn-primary" value="Search Car Now">
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -98,12 +117,11 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <div class="r-about-info-content">
-                    <div class="r-sec-head r-sec-head-left r-sec-head-line r-sec-head-w pt-0">
-                      <span>KNOW MORE ABOUT US</span>
-                      <h2>Who <b>Royal Cars</b> Are.</h2>
+                    <div class="r-sec-head r-sec-head-left r-sec-head-line r-sec-head-a pt-0">
+                      <h2>About Us</h2>
                     </div>
                     <p>
-                      We know the difference is in the details and that’s why our car rental services, in the tourism and business industry, stand out for their quality and good taste.
+                      Nadhifa Rent Car is an experienced car rental company that has operated in Jakarta and Bandung for more than a decade. We serve all types of car rental need, from personal or private usage to company. For short terms or long terms lease with competitive prices. Please contact us for more information.
                     </p>
                     <ul class="mb-0 pl-0">
                       <li><i class="fa fa-check-circle"></i> We working since 1980 with 4.000 customers</li>
@@ -121,29 +139,51 @@
           <div class="r-advantage-main-part">
             <div class="container clearfix">
               <div class="advantage-head">
-                <span>120+ CARS TYPE &amp; BRANDS</span>
-                <h2>Royal Cars <b>Advantages.</b></h2>
+                <h2>Nadhifa Rent Car <b>Advantages</b></h2>
               </div>
               <div class="row clearfix">
                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
                    <div class="r-advantages-box">
-                     <div class="icon"> <img src="assets/images/advantage-icon-1.png" alt=""> </div>
-                     <div class="head animated pulse">24/7 Customer Online Support</div>
-                     <div class="sub-text">Call us Anywhere Anytime</div>
+                     <div class="icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                     <div class="head animated pulse">New Vehicles</div>
+                     <div class="sub-text">All of the vehicles are purchased from official showroom and are all above 2013</div>
                    </div>
                  </div>
                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
                    <div class="r-advantages-box">
-                     <div class="icon"> <img src="assets/images/advantage-icon-2.png" alt=""> </div>
-                     <div class="head animated pulse">Reservation Anytime You Wants</div>
-                     <div class="sub-text">24/7 Online Reservation</div>
+                     <div class="icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+                     <div class="head animated pulse">Worry-Free</div>
+                     <div class="sub-text">Our services provide a replacement vehicle if it gets damaged or broken down (Terms & Conditions apply)</div>
                    </div>
                  </div>
                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
                    <div class="r-advantages-box">
-                     <div class="icon"> <img src="assets/images/advantage-icon-3.png" alt=""> </div>
-                     <div class="head animated pulse">Lots of Picking Locations</div>
-                     <div class="sub-text">250+ Locations</div>
+                     <div class="icon"><i class="fa fa-male" aria-hidden="true"></i></div>
+                     <div class="head animated pulse">Professional Drivers</div>
+                     <div class="sub-text">Our drivers are carefully selected to give you the most comfortable experience</div>
+                   </div>
+                 </div>
+              </div>
+              <div class="row clearfix">
+                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                   <div class="r-advantages-box">
+                     <div class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                     <div class="head animated pulse">Full Guarantee</div>
+                     <div class="sub-text">We guarantee safety for our customers while travelling with us</div>
+                   </div>
+                 </div>
+                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                   <div class="r-advantages-box">
+                     <div class="icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+                     <div class="head animated pulse">Free Maintenance Fee</div>
+                     <div class="sub-text">We provide free maintenance (Terms and Conditions apply)</div>
+                   </div>
+                 </div>
+                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                   <div class="r-advantages-box">
+                     <div class="icon"><i class="fa fa-medkit" aria-hidden="true"></i></div>
+                     <div class="head animated pulse">Insurance</div>
+                     <div class="sub-text">We provide all-risk insurance for our customers</div>
                    </div>
                  </div>
               </div>
@@ -157,21 +197,8 @@
                     <div class="col-md-6 col-sm-12">
                         <div class="r-faq-header">
                             <span>FIND YOUR ANSWER HERE</span>
-                            <h2>Frequenly <strong>Ask &amp; Questions.</strong></h2>
+                            <h2>Frequenly <strong>Ask &amp; Questions</strong></h2>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                      <ul class="nav nav-tabs r-faq-option-tab" id="myTab" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link active" id="faq-01-tab" data-toggle="tab" href="#faq-01" role="tab" aria-controls="faq-01" aria-selected="true"><i class="fa fa-user "></i>About account</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="faq-02-tab" data-toggle="tab" href="#faq-02" role="tab" aria-controls="faq-02" aria-selected="false"><i class="fa fa-question-circle"></i>Technical support</a>
-                        </li> 
-                        <li class="nav-item">
-                          <a class="nav-link" id="faq-03-tab" data-toggle="tab" href="#faq-03" role="tab" aria-controls="faq-03" aria-selected="false"><i class="fa fa-car"></i>Cars Features</a>
-                        </li>  
-                      </ul>
                     </div>
                 </div>
                 <div class="tab-content" id="myTabContent-01">
@@ -442,11 +469,11 @@
             </div>
           </div>
         </section>
-        <section>
+        <section id="r-vehicles">
           <div class="r-best-vehicles">
             <div class="r-sec-head r-accent-color r-sec-head-v">
-              <span>FEATURED CARS</span>
-              <h2>Our <b>Best Offers.</b></h2>
+              <span>RENT A CAR</span>
+              <h2>Our <b>Vehicles</b></h2>
             </div>
             <div class="container">
               <div class="row clearfix r-best-offer-list">
@@ -454,19 +481,16 @@
                   <div class="r-best-offer-single">
                     <div class="r-best-offer-in">
                       <div class="r-offer-img">
-                        <a class="d-inline-block" href="#"><img src="assets/images/best-01.jpg" class="img-fluid d-block m-auto" alt=""></a>
-                        <div class="r-offer-img-over">
-                          <i class="fa fa-search"></i>
-                        </div>
+                        <a class="d-inline-block" href="#"><img src="assets/images/ertiga.jpg" class="img-fluid d-block m-auto" alt=""></a>
                       </div>
                       <div class="r-best-offer-content">
-                        <a href="#"><b>Volk</b> GTR</a>
-                        <p>Start at <b>45.00 USD</b> per day</p>
+                        <a href="#"><b>Suzuki</b> Ertiga</a>
+                        <p>Start from <b>Rp <font style="font-size: x-large;">400.000</font></b></p>
                         <ul class="pl-0 mb-0">
                           <li><i class="fa fa-car"></i><span>2017</span></li>
-                          <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
+                          <li><i class="fa fa-cogs"></i><span>MT</span></li>
                           <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                          <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
+                          <li><i class="fa fa-road"></i><span>1.4k CC</span></li>
                         </ul>
                       </div>
                       <div class="r-offer-rewst-this">
@@ -479,19 +503,16 @@
                   <div class="r-best-offer-single">
                     <div class="r-best-offer-in">
                       <div class="r-offer-img">
-                        <a class="d-inline-block" href="#"><img src="assets/images/best-02.jpg" class="img-fluid d-block m-auto" alt=""></a>
-                        <div class="r-offer-img-over">
-                          <i class="fa fa-search"></i>
-                        </div>
+                        <a class="d-inline-block" href="#"><img src="assets/images/avanza.jpg" class="img-fluid d-block m-auto" alt=""></a>
                       </div>
                       <div class="r-best-offer-content">
-                        <a href="#"><b>Hyundai</b> Z.E</a>
-                        <p>Start at <b>45.00 USD</b> per day</p>
+                        <a href="#"><b>Toyota</b> Avanza</a>
+                        <p>Start from <b>Rp <font style="font-size: x-large;">425.000</font></b></p>
                         <ul class="pl-0 mb-0">
-                          <li><i class="fa fa-car"></i><span>2017</span></li>
-                          <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
+                          <li><i class="fa fa-car"></i><span>2016 up</span></li>
+                          <li><i class="fa fa-cogs"></i><span>AT/MT</span></li>
                           <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                          <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
+                          <li><i class="fa fa-road"></i><span>1.3k CC</span></li>
                         </ul>
                       </div>
                       <div class="r-offer-rewst-this">
@@ -504,19 +525,16 @@
                   <div class="r-best-offer-single">
                     <div class="r-best-offer-in">
                       <div class="r-offer-img">
-                        <a class="d-inline-block" href="#"><img src="assets/images/best-03.jpg" class="img-fluid d-block m-auto" alt=""></a>
-                        <div class="r-offer-img-over">
-                          <i class="fa fa-search"></i>
-                        </div>
+                        <a class="d-inline-block" href="#"><img src="assets/images/mobilio.jpg" class="img-fluid d-block m-auto" alt=""></a>
                       </div>
                       <div class="r-best-offer-content">
-                        <a href="#"><b>Audi</b> R8</a>
-                        <p>Start at <b>45.00 USD</b> per day</p>
+                        <a href="#"><b>Honda</b> Mobilio</a>
+                        <p>Start from <b>Rp <font style="font-size: x-large;">450.000</font></b></p>
                         <ul class="pl-0 mb-0">
-                          <li><i class="fa fa-car"></i><span>2017</span></li>
-                          <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
+                          <li><i class="fa fa-car"></i><span>2014 up</span></li>
+                          <li><i class="fa fa-cogs"></i><span>MT</span></li>
                           <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                          <li><i class="fa fa-road"></i><span>2.3k CC</span></li>
+                          <li><i class="fa fa-road"></i><span>1.5k CC</span></li>
                         </ul>
                       </div>
                       <div class="r-offer-rewst-this">
@@ -526,963 +544,273 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="r-best-vehicles">
-          <div class="r-best-vehicles">
-            <div class="r-sec-head r-accent-color r-sec-head-v">
-              <span>OUR VEHICLES BRANDS & TYPE</span>
-              <h2>Find Your <b>Best Vehicles.</b></h2>
-            </div>
-            <div class="container">
-              <div class="row clearfix r-best-vehicle-list-outer mt-0">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-xs-12">
-                  <div class="r-best-leftbar">
-                    <ul class="pl-0 mb-0 r-best-vehicle-types">
-                      <li data-tab="01"><span>All Manufacturer</span></li>
-                      <li data-tab="02"><span>Honda</span></li>
-                      <li class="r-best-vehicle-acitve" data-tab="03"><span>Mercedes Benz</span></li>
-                      <li data-tab="04"><span>Toyota</span></li>
-                      <li data-tab="05"><span>Volkswagen</span></li>
-                      <li data-tab="06"><span>Audi</span></li>
-                      <li data-tab="07"><span>Ferrari</span></li> 
-                    </ul>
+              <div class="row clearfix r-best-offer-list">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="r-best-offer-single">
+                    <div class="r-best-offer-in">
+                      <div class="r-offer-img">
+                        <a class="d-inline-block" href="#"><img src="assets/images/xpander.jpg" class="img-fluid d-block m-auto" alt=""></a>
+                      </div>
+                      <div class="r-best-offer-content">
+                        <a href="#"><b>Mitsubishi</b> Xpander</a>
+                        <p>Start from <b>Rp <font style="font-size: x-large;">500.000</font></b></p>
+                        <ul class="pl-0 mb-0">
+                          <li><i class="fa fa-car"></i><span>2018 up</span></li>
+                          <li><i class="fa fa-cogs"></i><span>AT</span></li>
+                          <li><i class="fa fa-beer"></i><span>PETROL</span></li>
+                          <li><i class="fa fa-road"></i><span>1.5k CC</span></li>
+                        </ul>
+                      </div>
+                      <div class="r-offer-rewst-this">
+                        <span class="text-uppercase">Rent this car</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-8 col-xs-12">
-                  <div class="r-best-tab-outer">
-                    <div class="r-best-tab d-none" data-tab-attr="01">
-                      <div class="r-best-vehicle-list clearfix row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-05.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Toyota Avanza <span>RX</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-06.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Chevrolet <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-01.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Volkswagen <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-02.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Audi Sport <span>S8</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-03.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Bugatti Feyron <span>F2</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-04.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Mercedes Benz <span>R3</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="r-best-offer-single">
+                    <div class="r-best-offer-in">
+                      <div class="r-offer-img">
+                        <a class="d-inline-block" href="#"><img src="assets/images/freed.jpg" class="img-fluid d-block m-auto" alt=""></a>
+                      </div>
+                      <div class="r-best-offer-content">
+                        <a href="#"><b>Honda</b> Freed</a>
+                        <p>Start from <b>Rp <font style="font-size: x-large;">550.000</font></b></p>
+                        <ul class="pl-0 mb-0">
+                          <li><i class="fa fa-car"></i><span>2013</span></li>
+                          <li><i class="fa fa-cogs"></i><span>MT</span></li>
+                          <li><i class="fa fa-beer"></i><span>PETROL</span></li>
+                          <li><i class="fa fa-road"></i><span>1.5k CC</span></li>
+                        </ul>
+                      </div>
+                      <div class="r-offer-rewst-this">
+                        <span class="text-uppercase">Rent this car</span>
                       </div>
                     </div>
-                    <div class="r-best-tab d-none" data-tab-attr="02">
-                      <div class="r-best-vehicle-list clearfix row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-01.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Volkswagen <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-02.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Audi Sport <span>S8</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div> 
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-05.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Toyota Avanza <span>RX</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-06.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Chevrolet <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="r-best-offer-single">
+                    <div class="r-best-offer-in">
+                      <div class="r-offer-img">
+                        <a class="d-inline-block" href="#"><img src="assets/images/serena.jpg" class="img-fluid d-block m-auto" alt=""></a>
+                      </div>
+                      <div class="r-best-offer-content">
+                        <a href="#"><b>Nissan</b> Serena</a>
+                        <p>Start from <b>Rp <font style="font-size: x-large;">550.000</font></b></p>
+                        <ul class="pl-0 mb-0">
+                          <li><i class="fa fa-car"></i><span>2012</span></li>
+                          <li><i class="fa fa-cogs"></i><span>MT</span></li>
+                          <li><i class="fa fa-beer"></i><span>PETROL</span></li>
+                          <li><i class="fa fa-road"></i><span>2k CC</span></li>
+                        </ul>
+                      </div>
+                      <div class="r-offer-rewst-this">
+                        <span class="text-uppercase">Rent this car</span>
                       </div>
                     </div>
-                    <div class="r-best-tab" data-tab-attr="03">
-                      <div class="r-best-vehicle-list clearfix row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-01.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Volkswagen <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-02.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Audi Sport <span>S8</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-03.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Bugatti Feyron <span>F2</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-04.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Mercedes Benz <span>R3</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-05.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Toyota Avanza <span>RX</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-06.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Chevrolet <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row clearfix r-best-offer-list">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="r-best-offer-single">
+                    <div class="r-best-offer-in">
+                      <div class="r-offer-img">
+                        <a class="d-inline-block" href="#"><img src="assets/images/sienta.jpg" class="img-fluid d-block m-auto" alt=""></a>
+                      </div>
+                      <div class="r-best-offer-content">
+                        <a href="#"><b>Toyota</b> Sienta</a>
+                        <p>Start from <b>Rp <font style="font-size: x-large;">550.000</font></b></p>
+                        <ul class="pl-0 mb-0">
+                          <li><i class="fa fa-car"></i><span>2017</span></li>
+                          <li><i class="fa fa-cogs"></i><span>MT</span></li>
+                          <li><i class="fa fa-beer"></i><span>PETROL</span></li>
+                          <li><i class="fa fa-road"></i><span>1.5k CC</span></li>
+                        </ul>
+                      </div>
+                      <div class="r-offer-rewst-this">
+                        <span class="text-uppercase">Rent this car</span>
                       </div>
                     </div>
-                    <div class="r-best-tab d-none" data-tab-attr="04">
-                      <div class="r-best-vehicle-list clearfix row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-01.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Volkswagen <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-02.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Audi Sport <span>S8</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-03.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Bugatti Feyron <span>F2</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-04.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Mercedes Benz <span>R3</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-05.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Toyota Avanza <span>RX</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-06.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Chevrolet <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="r-best-offer-single">
+                    <div class="r-best-offer-in">
+                      <div class="r-offer-img">
+                        <a class="d-inline-block" href="#"><img src="assets/images/innova.jpg" class="img-fluid d-block m-auto" alt=""></a>
+                      </div>
+                      <div class="r-best-offer-content">
+                        <a href="#"><b>Toyota</b> Innova</a>
+                        <p>Start from <b>Rp <font style="font-size: x-large;">700.000</font></b></p>
+                        <ul class="pl-0 mb-0">
+                          <li><i class="fa fa-car"></i><span>2016 up</span></li>
+                          <li><i class="fa fa-cogs"></i><span>AT</span></li>
+                          <li><i class="fa fa-beer"></i><span>PETROL</span></li>
+                          <li><i class="fa fa-road"></i><span>2k CC</span></li>
+                        </ul>
+                      </div>
+                      <div class="r-offer-rewst-this">
+                        <span class="text-uppercase">Rent this car</span>
                       </div>
                     </div>
-                    <div class="r-best-tab d-none" data-tab-attr="05">
-                      <div class="r-best-vehicle-list clearfix row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-01.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Volkswagen <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-02.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Audi Sport <span>S8</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-03.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Bugatti Feyron <span>F2</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-04.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Mercedes Benz <span>R3</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-05.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Toyota Avanza <span>RX</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-06.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Chevrolet <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="r-best-offer-single">
+                    <div class="r-best-offer-in">
+                      <div class="r-offer-img">
+                        <a class="d-inline-block" href="#"><img src="assets/images/calya.jpg" class="img-fluid d-block m-auto" alt=""></a>
+                      </div>
+                      <div class="r-best-offer-content">
+                        <a href="#"><b>Toyota</b> Calya</a>
+                        <p>Start from <b>Rp <font style="font-size: x-large;">2.000.000</font></b> per week</p>
+                        <ul class="pl-0 mb-0">
+                          <li><i class="fa fa-car"></i><span>2017</span></li>
+                          <li><i class="fa fa-cogs"></i><span>MT</span></li>
+                          <li><i class="fa fa-beer"></i><span>PETROL</span></li>
+                          <li><i class="fa fa-road"></i><span>1.5k CC</span></li>
+                        </ul>
+                      </div>
+                      <div class="r-offer-rewst-this">
+                        <span class="text-uppercase">Rent this car</span>
                       </div>
                     </div>
-                    <div class="r-best-tab d-none" data-tab-attr="06">
-                      <div class="r-best-vehicle-list clearfix row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-01.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Volkswagen <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-02.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Audi Sport <span>S8</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-03.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Bugatti Feyron <span>F2</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-04.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Mercedes Benz <span>R3</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div> 
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-06.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Chevrolet <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row clearfix r-best-offer-list">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="r-best-offer-single">
+                    <div class="r-best-offer-in">
+                      <div class="r-offer-img">
+                        <a class="d-inline-block" href="#"><img src="assets/images/terra.jpg" class="img-fluid d-block m-auto" alt=""></a>
+                      </div>
+                      <div class="r-best-offer-content">
+                        <a href="#"><b>Nissan</b> Terra</a>
+                        <p>Start from <b><font style="font-size: x-large;">by Request</font></b></p>
+                        <ul class="pl-0 mb-0">
+                          <li><i class="fa fa-car"></i><span>2016</span></li>
+                          <li><i class="fa fa-cogs"></i><span>MT</span></li>
+                          <li><i class="fa fa-beer"></i><span>PETROL</span></li>
+                          <li><i class="fa fa-road"></i><span>2.5k CC</span></li>
+                        </ul>
+                      </div>
+                      <div class="r-offer-rewst-this">
+                        <span class="text-uppercase">Rent this car</span>
                       </div>
                     </div>
-                    <div class="r-best-tab d-none" data-tab-attr="07">
-                      <div class="r-best-vehicle-list clearfix row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-04.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Mercedes Benz <span>R3</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-05.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Toyota Avanza <span>RX</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-06.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Chevrolet <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-01.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Volkswagen <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-02.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Audi Sport <span>S8</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-03.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Bugatti Feyron <span>F2</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="r-best-offer-single">
+                    <div class="r-best-offer-in">
+                      <div class="r-offer-img">
+                        <a class="d-inline-block" href="#"><img src="assets/images/fortuner.jpg" class="img-fluid d-block m-auto" alt=""></a>
+                      </div>
+                      <div class="r-best-offer-content">
+                        <a href="#"><b>Toyota</b> Fortuner</a>
+                        <p>Start from <b><font style="font-size: x-large;">by Request</font></b></p>
+                        <ul class="pl-0 mb-0">
+                          <li><i class="fa fa-car"></i><span>2016</span></li>
+                          <li><i class="fa fa-cogs"></i><span>MT</span></li>
+                          <li><i class="fa fa-beer"></i><span>PETROL</span></li>
+                          <li><i class="fa fa-road"></i><span>2.5k CC</span></li>
+                        </ul>
+                      </div>
+                      <div class="r-offer-rewst-this">
+                        <span class="text-uppercase">Rent this car</span>
                       </div>
                     </div>
-                    <div class="r-best-tab d-none" data-tab-attr="08">
-                      <div class="r-best-vehicle-list clearfix row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-01.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Volkswagen <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-02.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Audi Sport <span>S8</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-03.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Bugatti Feyron <span>F2</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-04.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Mercedes Benz <span>R3</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-05.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Toyota Avanza <span>RX</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                          <div class="r-best-vehicle-single">
-                            <a href="javaScript:void(0)" class="d-block m-auto img-fluid">
-                              <img src="assets/images/best-06.jpg" class="img-fluid d-block m-auto" alt="">
-                            </a>
-                            <div class="r-best-vehicle-content">
-                              <span class="r-register-time">Registered 2016</span>
-                              <a href="javaScript:void(0)" class="r-modal-name">Chevrolet <span>GTR</span></a>
-                              <div class="clearfix">
-                                <span class="r-average">$50/Day</span>
-                                <span class="r-engine"><img src="assets/images/meter-icon.png" class="d-inline-block" alt="">2.3K CC</span>
-                              </div>
-                              <ul>
-                                <li><i class="fa fa-cogs"></i><span>MANUAL</span></li>
-                                <li><i class="fa fa-beer"></i><span>PETROL</span></li>
-                                <li><i class="fa fa-road"></i><span>25K KM</span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="r-best-offer-single">
+                    <div class="r-best-offer-in">
+                      <div class="r-offer-img">
+                        <a class="d-inline-block" href="#"><img src="assets/images/pajero.jpg" class="img-fluid d-block m-auto" alt=""></a>
+                      </div>
+                      <div class="r-best-offer-content">
+                        <a href="#"><b>Mitsubishi</b> Pajero Sport</a>
+                        <p>Start from <b><font style="font-size: x-large;">by Request</font></b></p>
+                        <ul class="pl-0 mb-0">
+                          <li><i class="fa fa-car"></i><span>2012</span></li>
+                          <li><i class="fa fa-cogs"></i><span>MT</span></li>
+                          <li><i class="fa fa-beer"></i><span>PETROL</span></li>
+                          <li><i class="fa fa-road"></i><span>2k CC</span></li>
+                        </ul>
+                      </div>
+                      <div class="r-offer-rewst-this">
+                        <span class="text-uppercase">Rent this car</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row clearfix r-best-offer-list">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="r-best-offer-single">
+                    <div class="r-best-offer-in">
+                      <div class="r-offer-img">
+                        <a class="d-inline-block" href="#"><img src="assets/images/h1.jpg" class="img-fluid d-block m-auto" alt=""></a>
+                      </div>
+                      <div class="r-best-offer-content">
+                        <a href="#"><b>Hyundai</b> H1</a>
+                        <p>Start from <b>Rp <font style="font-size: x-large;">1.000.000</font></b></p>
+                        <ul class="pl-0 mb-0">
+                          <li><i class="fa fa-car"></i><span>2018 up</span></li>
+                          <li><i class="fa fa-cogs"></i><span>MT</span></li>
+                          <li><i class="fa fa-beer"></i><span>PETROL</span></li>
+                          <li><i class="fa fa-road"></i><span>2.5k CC</span></li>
+                        </ul>
+                      </div>
+                      <div class="r-offer-rewst-this">
+                        <span class="text-uppercase">Rent this car</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="r-best-offer-single">
+                    <div class="r-best-offer-in">
+                      <div class="r-offer-img">
+                        <a class="d-inline-block" href="#"><img src="assets/images/hiace.jpg" class="img-fluid d-block m-auto" alt=""></a>
+                      </div>
+                      <div class="r-best-offer-content">
+                        <a href="#"><b>Toyota</b> Hiace</a>
+                        <p>Start from <b>Rp <font style="font-size: x-large;">1.750.000</font></b></p>
+                        <ul class="pl-0 mb-0">
+                          <li><i class="fa fa-car"></i><span>2016</span></li>
+                          <li><i class="fa fa-cogs"></i><span>MT</span></li>
+                          <li><i class="fa fa-beer"></i><span>PETROL</span></li>
+                          <li><i class="fa fa-road"></i><span>2.5k CC</span></li>
+                        </ul>
+                      </div>
+                      <div class="r-offer-rewst-this">
+                        <span class="text-uppercase">Rent this car</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="r-best-offer-single">
+                    <div class="r-best-offer-in">
+                      <div class="r-offer-img">
+                        <a class="d-inline-block" href="#"><img src="assets/images/alphard.jpg" class="img-fluid d-block m-auto" alt=""></a>
+                      </div>
+                      <div class="r-best-offer-content">
+                        <a href="#"><b>Toyota</b> Alphard White</a>
+                        <p>Start from <b>Rp <font style="font-size: x-large;">2.750.000</font></b></p>
+                        <ul class="pl-0 mb-0">
+                          <li><i class="fa fa-car"></i><span>2015 up</span></li>
+                          <li><i class="fa fa-cogs"></i><span>MT</span></li>
+                          <li><i class="fa fa-beer"></i><span>PETROL</span></li>
+                          <li><i class="fa fa-road"></i><span>2.5k CC</span></li>
+                        </ul>
+                      </div>
+                      <div class="r-offer-rewst-this">
+                        <span class="text-uppercase">Rent this car</span>
                       </div>
                     </div>
                   </div>
