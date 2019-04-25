@@ -513,7 +513,7 @@ var App = (function(window){
       $(document).on('click', '.r-send-wa', function(evt){
         evt.preventDefault();
         var car = $(this).data("options").name;
-        var phone = "081382292205";
+        var phone = "6281382292205";
         var msg = "Halo, Saya ingin menyewa mobil " + car + ". Mohon info harganya.";
         window.location = "https://api.whatsapp.com/send?phone=" + phone + "&text=" + msg;
       });
