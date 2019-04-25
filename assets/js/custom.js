@@ -48,8 +48,8 @@ var App = (function(window){
       /* COLOR SWITCHER */
       this.ColorSwitcher(); 
 
-      /* BACK TO TOP */
-      this.BackToTop();
+      /* BACK TO TOP 
+      this.BackToTop();*/
 
       /* SET SEARCH TOP MARGIN  */
       this.SearchMargin();
@@ -60,6 +60,8 @@ var App = (function(window){
       /* ACTIVATE COUNTER  */
       this.StartCounter();
 
+      /* SEND WA  */
+      this.SendWA();
     },
 
     getObject: function(selector){
@@ -468,21 +470,14 @@ var App = (function(window){
         $("#r-customizer").toggleClass("r-customizer_toggle");
       })
     },
-
+/*
     BackToTop: function(){
-      $(window).scroll(function () {
-          if ($(this).scrollTop() > 1) {
-              $("#r-to-top").css({right: '25px'});
-          } else {
-              $("#r-to-top").css({right: '-150px'});
-          }
-      });
       $("#r-to-top").on('click', function(){
-          $('html, body').animate({scrollTop: $("#r-about-info").offset().top}, 800);
+          $('html, body').animate({scrollTop: '0px'}, 800);
           return false;
       });
     },
-
+*/
     SearchMargin: function(){
       var headerHeight = $('.r-header-strip').outerHeight() + 50;
       $('.r-search-wrapper').css({'top' : headerHeight + 'px'});
@@ -512,6 +507,16 @@ var App = (function(window){
           });
         });
       }
+    },
+
+    SendWA: function(){
+      $(document).on('click', '.r-send-wa', function(evt){
+        evt.preventDefault();
+        var car = $(this).data("options").name;
+        var phone = "081382292205";
+        var msg = "Halo, Saya ingin menyewa mobil " + car + ". Mohon info harganya.";
+        window.location = "https://api.whatsapp.com/send?phone=" + phone + "&text=" + msg;
+      });
     }
 
   }
@@ -547,33 +552,18 @@ $(window).on('scroll', function(){
   else{
     $('.r-header-strip').removeClass('r-header-fixed');
   }
+
+  return false;
 });
 
-// This is a functions that scrolls to #{blah}link
-function goToByScroll(id) {
-    // Remove "link" from the ID
-    id = id.replace("link", "");
-    alert(id);
-    // Scroll
-    $('html,body').animate({
-        scrollTop: $("#" + id).offset().top
-    }, 'slow');
+$("#menus > ul > li > a").on('click', function(){
+    var id = this.id.replace("link", "")+"-pos";
+
+    $('html, body').stop(true,true).animate({scrollTop: $("#"+id).offset().top}, 800);
     return false;
-}
-
-$("#menus > ul > li > a").click(function(e) {
-    // Prevent a page reload when a link is pressed
-    alert("DOR!");
-    e.preventDefault();
-
-    // Scroll
-    $('html,body').animate({
-        scrollTop: $("#r-about-info").offset().top
-    }, 2000);
-    return false;
-
-    // Call the scroll function
-    //goToByScroll(this.id);
-
 });
 
+$("#search-car").on('click', function(){
+    $('html, body').stop(true,true).animate({scrollTop: $("#r-vehicles-pos").offset().top}, 800);
+    return false;
+});
